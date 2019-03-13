@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="contextevent" class="AOP.Question1.ContextEventExample"/>
+    <bean id="myeventlistener" class="AOP.Question2.MyEventListener"/>
+
+    <bean id="myevent" class="AOP.Question3.MyEventListener"/>
+    <bean id="custompublisher" class="AOP.Question3.CustomPublisher"/>
+
+    <aop:aspectj-autoproxy/>
+
+
+</beans>
